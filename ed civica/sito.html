@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oasi Digitale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Pulsante hamburger -->
+    <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3>Menu</h3>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="ed civica sito.html">Home</a></li>
+            <li><a href="leggi-ora.html">Articolo 1</a></li>
+            <li><a href="leggi-ora2.html">Articolo 2</a></li>
+            <li><a href="leggi-ora3.html">Articolo 3</a></li>
+            <li><a href="leggi-ora4.html">Articolo 4</a></li>
+            <li><a href="leggi-ora5.html">Articolo 5</a></li>
+            <li><a href="leggi-ora6.html">Articolo 6</a></li>
+            <li><a href="leggi-ora7.html">Articolo 7</a></li>
+        </ul>
+    </div>
+
+    <!-- Contenuto principale -->
+    <div class="main-content">
+        <div class="section" id="sostenibilita">
+            <h1>Team Ecosostenibilità</h1>
+            <p>Un gruppo dedicato alla promozione di pratiche sostenibili e alla riduzione dell'impatto ambientale.</p>
+            <div class="circle-container">
+                <div class="circle-text from-left">Sostenibilità</div>
+                <div class="circle-text from-right">Innovazione</div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1213&q=80" alt="Team Ecosostenibilità" class="centered-image">
+        </div>
+
+        <div class="section" id="innovazione">
+            <h1>Innovazione Tecnologica</h1>
+            <p>Esploriamo le frontiere della tecnologia per un futuro più sostenibile.</p>
+            <div class="circle-container">
+                <div class="circle-text from-left">Tecnologia</div>
+                <div class="circle-text from-right">Futuro</div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1084&q=80" alt="Innovazione Tecnologica" class="centered-image">
+        </div>
+
+        <div class="section" id="formazione">
+            <h1>Formazione e Sviluppo</h1>
+            <p>Investiamo nella crescita professionale e nella formazione continua.</p>
+            <div class="circle-container">
+                <div class="circle-text from-left">Crescita</div>
+                <div class="circle-text from-right">Apprendimento</div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="Formazione e Sviluppo" class="centered-image">
+        </div>
+
+        <!-- Tenda nera finale -->
+        <div class="black-curtain">
+            <h2>Oasi Digitale</h2>
+            <p>Trasformiamo il futuro digitale della nostra regione</p>
+            <div class="content-grid">
+                <div class="grid-item">
+                    <h3>Chi Siamo</h3>
+                    <p>Un team di esperti dedicati all'innovazione digitale e alla sostenibilità ambientale.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>L'obbiettivo</h3>
+                    <p>Promuovere lo sviluppo tecnologico sostenibile e l'inclusione digitale nella nostra comunità.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>I Nostri Progetti</h3>
+                    <p>Iniziative concrete per un futuro più verde e connesso, dalla formazione alla ricerca.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script per il menu hamburger -->
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const sidebar = document.querySelector('.sidebar');
+        const mainContent = document.querySelector('.main-content');
+        
+        hamburger.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            mainContent.classList.toggle('shifted');
+        });
+    </script>
+</body>
+</html> 
